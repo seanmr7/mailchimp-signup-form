@@ -7,39 +7,46 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+
   <div class="main">
-    <h1>Welcome to Mailchimp</h1>
-    <p>Find your people. Engage your customers. 
-      Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="/">Log in</a></p>
+      <aside class="left-sidebar"></aside>
+    <div class="picture"></div>
+    <div class="sign-up-form">
+      <h1>Welcome to Mailchimp</h1>
+      <p>Find your people. Engage your customers. 
+        Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="/">Log in</a></p>
 
-    <form action="" method="GET">
-      <label for="email" class="form-label">Email</label>
-      <input type="text" name="email" id="email" class="form-input">
+      <form action="" method="GET">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" name="email" id="email" class="form-input">
+        
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="username" id="username" class="form-input">
+
+        <label for="password" class="form-label">Password</label>
+        <input type="text" name="password" id="password" class="form-input">
+        <ul>
+          <li>One lowercase character</li>
+          <li>One uppercase character</li>
+          <li>One number</li>
+          <li>One special character</li>
+          <li>8 characters minimum</li>
+        </ul>
+        <div class="flex">
+        <input type="submit" name="submit" value="Sign Up" class="btn">
+        <input type="checkbox" name="emails" class="checkbox">
+        <label for="checkbox">I don't want to recieve emails about new Mailchimp products, best practices, or special offers</label>
+      </div>
+      </form>
       
-      <label for="username" class="form-label">Username</label>
-      <input type="text" name="username" id="username" class="form-input">
-
-      <label for="password" class="form-label">Password</label>
-      <input type="text" name="password" id="password" class="form-input">
-      <ul>
-        <li>One lowercase character</li>
-        <li>One uppercase character</li>
-        <li>One number</li>
-        <li>One special character</li>
-        <li>8 characters minimum</li>
-      </ul>
-      <div class="flex">
-      <input type="submit" name="submit" value="Sign Up" class="btn">
-      <input type="checkbox" name="emails" class="checkbox">
-      <label for="checkbox">I don't want to recieve emails about new Mailchimp products, best practices, or special offers</label>
+      <p class="sign-up-text">By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's Terms of Use and Privacy Policy.</p>
     </div>
-    </form>
-    
-    <p class="sign-up-text">By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's Terms of Use and Privacy Policy.</p>
+    <footer>
+      <p>©2001–2021 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group.</p> 
+      <p><a href="/">Cookie Preferences</a>, <a href="/">Privacy</a>, and <a href="/">Terms.</a></p>
+    </footer>
   </div>
-  <footer>
-    <p>©2001–2021 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group.</p> 
-    <p><a href="/">Cookie Preferences</a>, <a href="/">Privacy</a>, and <a href="/">Terms.</a></p>
-  </footer>
+
 
 </body>

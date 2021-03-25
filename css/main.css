@@ -75,10 +75,20 @@ table {
 	outline: none;
 }
 
+.left-sidebar {
+	background-color: #ffe01b;
+	width: 8px;
+	margin-top: -8em;
+	z-index: 1;
+	grid-area: left-sidebar;
+}
+
 .main {
-  margin: 5em;
-	padding: 0 2em;
-	max-width: 600px;
+	position: relative;
+  display: grid;
+	height: 100vh;
+	grid-template-columns: 8% 67% 25%;
+	grid-template-areas: "left-sidebar form picture"
 }
 
 .main h1 {
@@ -98,6 +108,19 @@ table {
 .main a {
   text-decoration: none;
   color: #007c89;
+}
+
+.picture {
+	grid-area: picture;
+	background-color: #ffe01b;
+}
+
+.sign-up-form {
+	margin-left: 5em;
+	margin-top: 8em;
+	padding: 0 2em;
+	max-width: 600px;
+	grid-area: form;
 }
 
 .form-label {
@@ -148,5 +171,18 @@ table {
 
 p.sign-up-text {
 	font-size: .875rem;
-	
+}
+
+.main footer {
+	position: fixed;
+	margin-left: 1em;
+	bottom: 0;
+}
+
+.main footer p {
+	font-size: 0.75rem;
+	padding: 0;
+	color: grey;
+	margin: 0 0 0.5em 0;
+	line-height: 1.5;
 }
